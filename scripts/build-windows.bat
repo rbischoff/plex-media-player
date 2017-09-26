@@ -1,6 +1,7 @@
 cd %BUILD_DIR%  || exit /b
 
 if exist ../conanfile.py (
+  conan remove web-client-tv/3.13.2-cb96c53@plex/public
   conan install ..
 )
 
