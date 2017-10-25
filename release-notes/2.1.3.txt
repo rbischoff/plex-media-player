@@ -1,0 +1,21 @@
+NEW:
+
+- UI: Added companion support to TV players
+- UI: Added TV video player settings
+- UI: TV video playback will pause when any fullscreen options modal is opened from the player and resume when it’s closed
+- UI: During TV music playback media keys (play, play/pause, ffwd/rew, next/prev, etc.) will control music playback, even after the fullscreen player is closed
+
+FIXED:
+
+- UI: Fixed TV app background not being correctly restored when a player is closed
+- UI: Fixed selecting previous video from post play on TV not restarting that video from the beginning
+- UI: Fixed TV app volume not affecting media playback volume
+- UI: Fixed `shuffle` button in TV players
+- UI: Fixed `previous` button not restarting currently playing item after playing past a certain point in TV players
+- UI: Fixed selecting a photo in TV mode from a photo library viewed in `list view` not open a slideshow containing the items in the library
+- UI: App no longer becomes unusable in TV mode when a photo slideshow is stopped with a mouse click while the photo strip is visible
+- UI: Theme music fades out correctly when leaving preplay pages in TV mode
+- UI: TV player clocks time format should match app preferences
+- UI: Fixed unwatched indicator position in TV player’s more actions modal
+- UI: Pressing `Esc` to exit the post play in TV mode no longer breaks the app
+- UI: Fixed playing media from playlists in TV mode
