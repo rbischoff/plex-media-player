@@ -1,0 +1,31 @@
+NEW:
+
+- UI: Added current video metadata above TV player controls
+- UI: Added `go to album` action in TV music player actions menu
+
+FIXED:
+
+- UI: Pressing certain shortcut keys (change audio/subtitle stream, increase/decrease stream delay, toggle subtitles) no longer makes TV player OSD appear
+- UI: Selecting an item from the TV play queue starts playback of that item immediately even when playback is paused
+- UI: Fixed media playback from TV Channels, Watch Later and Recommended
+- UI: Fixed media playback from TV search results
+- UI: Stabilized TV player controls hide timeout
+- UI: TV Video player progress does not animate on seeking, instead instantly updates to the correct position
+- UI: Music lyrics on TV load correctly when toggling repeat/shuffle
+- UI: `go to show` button in TV video player no longer takes user to season level rather than show level
+- UI: TV player activity indicators (e.g. loading, buffering) no longer prevent OSD buttons from being pressed
+- UI: TV playback loops back to the first video in the play queue when repeat all is set
+- UI: Fixed resume/restart behavior when playing items with offset in TV move at library and show level
+- UI: Fixed TV mode edge case in resume/restart modal where starting playback using `play` button would result in loss of focus when player was exited
+- UI: Fixed TV movie extras in TV mode getting stuck in a buffering state and never starting to play
+- UI: Disabling screen saver in TV mode no longer results in a black screen
+- UI: Fixed display mode switching support in TV mode
+- UI: Screen saver/Plex Home user switching screen no longer appears over playing video in TV mode
+- UI: Fixed playing trailer using trailer button in TV mode preplay page
+- UI: Fixed changing audio stream from TV video player settings
+- UI: Fixed navigating back to show/library from TV player using more actions menu
+- UI: Post play screen in TV mode no longer appears when pausing video, instead will appear the player is exited after 90% of the video is viewed
+- UI: Manually starting playback from post play screen no longer breaks the application in TV mode
+- UI: Fixed TV mode bug when resuming video playback on receiver
+- UI: Fixed playing mixed photos/video slideshow in TV mode from controller
+- UI: Photos no longer linger in the background in TV mode when stopping playback from controller
