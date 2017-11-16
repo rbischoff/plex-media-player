@@ -1,0 +1,19 @@
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode8
+      env:
+        - MATRIX_EVAL="brew install gcc && CC=gcc-7 && CXX=g++-7"
+
+before_install:
+  - brew update
+  - brew outdated ninja || brew upgrade ninja
+  - brew outdated mpv || brew upgrade mpv
+  - brew outdated conan || brew upgrade conan
+  - mkdir build
+  - cd build
+
+  - eval "${MATRIX_EVAL}"
+
+script:
+  cmake -GXcode ..
