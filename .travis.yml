@@ -5,6 +5,8 @@ matrix:
       env:
         - MATRIX_EVAL="brew install gcc && CC=gcc-7 && CXX=g++-7"
 
+language: c++
+
 before_install:
   - brew update
   - brew outdated ninja || brew upgrade ninja
