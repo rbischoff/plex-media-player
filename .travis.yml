@@ -9,6 +9,7 @@ language: c++
 
 before_install:
   - brew update
+  - brew install cmake
   - brew outdated ninja || brew upgrade ninja
   - brew outdated mpv || brew upgrade mpv
   - brew outdated conan || brew upgrade conan
