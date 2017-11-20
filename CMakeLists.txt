@@ -6,7 +6,6 @@ if (EXISTS "${CMAKE_SOURCE_DIR}/toolchain.cmake")
 endif()
 
 project(PlexMediaPlayer CXX C)
-message(WARNING "${CMAKE_BINARY_DIR}")
 if(EXISTS ${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
   include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 else()
