@@ -4,6 +4,7 @@ matrix:
       osx_image: xcode8
       env:
         - MATRIX_EVAL="brew install gcc && CC=gcc-7 && CXX=g++-7"
+        - MATRIX_EVAL_CMAKE="CMAKE_CXX_COMPILER=g++-7 && CMAKE_CC_COMPILER=gcc-7"
 
 language: c++
 
@@ -14,8 +15,8 @@ before_install:
   - brew outdated conan || brew upgrade conan
   - mkdir build
   - cd build
-
   - eval "${MATRIX_EVAL}"
+  - eval "${MATRIX_EVAL_CMAKE}"
 
 script:
   cmake -GXcode ..
